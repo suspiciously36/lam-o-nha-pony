@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai 1 B5</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js"></script>
+    <script
+      src="https://kit.fontawesome.com/0dc2352c62.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" /> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Hey there</h1>
+    <p>
+      <span class="description">We'd like to hear from you. </span>Send us your
+      message or just say hy with our <br />
+      contact form or directly via phone, we love to chat.
+    </p>
+
+    <div class="name">
+      <input type="text" placeholder="Your name" id="name" required />
+      <label for="name"><i class="fa-solid fa-user"></i></label>
+      <i class="fa-solid fa-xmark"></i>
+      <i class="fa-solid fa-star"></i>
+      <div class="pop-up-name">
+        Enter your name
+        <div class="triangle"></div>
+      </div>
+    </div>
+    <div class="email">
+      <input type="email" placeholder="your@domain.com" id="email" />
+      <label for="email"><i class="fa-solid fa-envelope"></i></label>
+      <i class="fa-solid fa-xmark"></i>
+      <i class="fa-solid fa-star"></i>
+      <div class="pop-up-email">
+        Enter your email
+        <div class="triangle"></div>
+      </div>
+    </div>
+    <div class="phone">
+      <input type="text" placeholder="+44 00 123" id="phone" required />
+      <label for="phone"><i class="fa-solid fa-mobile-screen"></i></label>
+      <div class="pop-up-number">
+        Enter your phone number
+        <div class="triangle"></div>
+      </div>
+    </div>
+    <div class="subject">
+      <i class="fa-solid fa-sort"></i>
+      <select name="" id="subject">
+        <option value="0">Subject</option>
+        <option value="1">HTML</option>
+        <option value="2">CSS</option>
+        <option value="3">Javascript</option>
+      </select>
+      <label for="subject"><i class="fa-solid fa-file"></i></label>
+      <i class="fa-solid fa-xmark"></i>
+      <i class="fa-solid fa-star"></i>
+      <div class="pop-up-subject">
+        Choose your subject
+        <div class="triangle"></div>
+      </div>
+    </div>
+    <div class="message">
+      <i class="fa-solid fa-star"></i>
+      <textarea
+        id="message"
+        name="message"
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="Message"
+        required
+      ></textarea>
+      <label for="message"><i class="fa-solid fa-message"></i></label>
+      <i class="fa-solid fa-xmark"></i>
+      <i class="fa-solid fa-star"></i>
+      <div class="pop-up-message">
+        Enter your message
+        <div class="triangle"></div>
+      </div>
+    </div>
+    <div class="send-form">
+      <label class="input-container"
+        >Send me a copy of this message
+        <input type="checkbox" />
+        <span class="checkmark"></span>
+      </label>
+      <button class="send">SEND</button>
+    </div>
+  </body>
+</html>
