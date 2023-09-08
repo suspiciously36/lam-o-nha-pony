@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dantri chấm com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="home"><a href="#!"><img src="./img/dantri.svg" alt="dantri" class="homepage"></a></div>
+            <div class="rest">
+                <div class="other-pages">
+                    <div class="fica">
+                        <a href="#!">
+                            <img src="./img/fica.jpg" alt="fica">
+                            <span>Fica</span>
+                        </a>
+                    </div>
+                    <div class="dti"><a href="#!"><img src="./img/DTiNews.png" alt="dti"><span>DTiNews</span></a></div>
+                </div>
+                <div class="weather-wrap">
+                    <div class="item-location">Hà Nội</div>
+                    <div class="item-time">Thứ 5, 07/09/2023</div>
+                </div>
+                <div class="weather-icon"><i class="fa-solid fa-cloud"></i></div>
+                <div class="weather-temp">36°C</div>
+                <div class="user-wrap">
+                    <button class="login-btn">Đăng nhập</button>
+                    <i class="fa-regular fa-user"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <form action="" class="login-register hidden">
+        <div class="login-register_btn">
+            <button type="button" class="login-btn active">Đăng Nhập</button>
+            <button type="button" class="register-btn">Đăng Ký</button>
+        </div>
+        <!-- login -->
+        <div class="form-login">
+            <p class="desc">với các tài khoản mạng xã hội</p>
+            <div class="social-media">
+                <a href="#!">
+                    <div class="google">
+                        <img src="./img/gg.svg" alt="google">
+                        <span>Google</span>
+                    </div>
+                </a>
+                <a href="#!">
+                    <div class="facebook">
+                        <img src="./img/fb.svg" alt="facebook">
+                        Facebook
+                    </div>
+                </a>
+            </div>
+            <p class="or">hoặc</p>
+            <p class="not-exist error hidden">Account not exist.</p>
+            <div class="login-form">
+                <label for="email">Email
+                    <input type="email" name="email" class="email-login" placeholder="Email">
+                    <p class="error error-email-login hidden">Vui lòng nhập thông tin</p>
+                </label>
+                <label for="password">Mật khẩu
+                    <input type="password" name="password" class="password-login" placeholder="Mật khẩu">
+                    <p class="error error-password-login hidden">Vui lòng nhập thông tin</p>
+                    <i class="fa-regular fa-eye"></i>
+                    <i class="fa-regular fa-eye-slash hidden"></i>
+                </label>
+            </div>
+            <p class="forgot-pwd"><a href="#!">Quên mật khẩu?</a></p>
+            <button class="btn">Đăng Nhập</button>
+        </div>
+        <!-- register -->
+        <div class="form-register hidden active">
+            <p class="desc">Hoàn thành đăng ký, và bắt đầu trải nghiệm ngay!</p>
+            <div class="register-form">
+                <label for="text">Họ và tên
+                    <input type="text" name="text" class="text-register" placeholder="Họ và tên">
+                    <p class="error error-fullname-register hidden">Vui lòng nhập thông tin</p>
+                </label>
+                <label for="email">Email
+                    <input type="email" name="email" class="email-register" placeholder="Email">
+                    <p class="error error-email-register hidden">Vui lòng nhập thông tin</p>
+                </label>
+                <label for="password">Mật khẩu
+                    <input type="password" name="password" class="password-register" placeholder="Mật khẩu">
+                    <p class="error error-password-register hidden">Vui lòng nhập thông tin</p>
+                    <i class="fa-regular fa-eye"></i>
+                    <i class="fa-regular fa-eye-slash hidden"></i>
+                </label>
+            </div>
+            <p class="policy">Bằng cách đăng ký tài khoản, bạn cũng đồng thời chấp nhận <a href="#!"
+                    class="highlight">mọi điều
+                    kiện về qui định và chính sách của Dân trí</a></p>
+            <button class="btn">Đăng Ký</button>
+        </div>
+    </form>
+
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
